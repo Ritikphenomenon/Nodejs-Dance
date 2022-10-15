@@ -4,8 +4,26 @@ html
     title Ritik Dance Academy 
     block scripts
     block style 
-    
-  body  content 
-     block content 
-     footer#footer
+
+  body  
+
+
+    nav#navbar
+      ul
+        div#logo  
+          img(src="../static/img/logo.png", alt="logo")
+          | RDA
+        li
+          a(href='/') HOME
+        li
+          a(href='/') ABOUT 
+        li
+          a(href='/contact') CONTACT US 
+        li
+          a(href='/') SERVICES 
+        li
+          a(href='/') CLASS INFO
+
+    block content 
+    footer#footer
         | @copyright 2022 RitikDanceAcademy.com All Right Reserved

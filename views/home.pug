@@ -1,65 +1,56 @@
+
 extends base.pug
 
 block scripts
-      script(src='../static/index.js') 
-  
+  script(src='../static/index.js') 
+
 block style 
-        style 
-           include ../static/style.css 
+  style 
+    include ../static/style.css 
 
 
 block content    
- nav#navbar
-  ul
-    div#logo  
-      img(src="../static/img/dance.png", alt="logo")
-      | RDA
-    li
-      a(href='/') HOME
-    li
-      a(href='/') ABOUT 
-    li
-      a(href='/') CONTACT US 
-    li
-      a(href='/') SERVICES 
-    li
-      a(href='/') CLASS INFO
-section#introsection
- div welcome to Ritik Dance academy
-  div.small Eat Dance Sleep Reapeat
+  
+  section#introsection
+    div welcome to Ritik Dance academy
+    div.small Eat Dance Sleep Reapeat
 
-section#missionsection 
-  h2 our mission
-  div.card 
-   h3 Dance perfections 
-   div.card-box 
-      div.card-img 
-        img(src="../static/img/dance1.png", alt="dance1.png") 
+  section#missionsection 
+    h2 our mission
 
-      div.card-content 
-        p this is the best dance academy of the universe     
-  div.card 
-     h3 Dance the way you like
-      div.card-box 
-      div.card-img 
-        img(src="../static/img/dance2.png", alt="dance1.png") 
+    div.card-container
 
-      div.card-content 
-        p this is the best dance academy of the universe 
-  div.card 
-      h3 expert teaching 
-       div.card-box 
-      div.card-img 
-        img(src="../static/img/dance3.png", alt="dance1.png") 
+      div.card 
+        h3 Dance perfections
+          div.card-box 
+          div.card-img 
+              img(src="../static/img/dance1.png", alt="dance1.png") 
 
-      div.card-content 
-        p this is the best dance academy of the universe 
+          div.card-content 
+              p this is the best dance academy of the universe  
 
-section#sponsorssections
-  h2 our  sponsors 
-  div#sponsors 
-     img(src="../static/img/logo1.png", alt="sponsors image",class="spimage") 
-     img(src="../static/img/logo2.png", alt="sponsors image",class="spimage") 
-     img(src="../static/img/logo3.png", alt="sponsors image",class="spimage") 
-     img(src="../static/img/logo4.png", alt="sponsors image",class="spimage")
+      div.card 
+        h3 Dance the way you like
+          div.card-box 
+          div.card-img 
+            img(src="../static/img/dance2.png", alt="dance1.png") 
 
+          div.card-content 
+            p this is the best dance academy of the universe
+
+      div.card 
+        h3 expert teaching 
+          div.card-box 
+          div.card-img 
+            img(src="../static/img/dance3.png", alt="dance1.png") 
+
+          div.card-content 
+            p this is the best dance academy of the universe 
+
+  section#sponsorssections
+    h2 our  sponsors 
+    div#sponsors 
+      img(src="../static/img/logo1.png", alt="sponsors image",class="spimage") 
+      img(src="../static/img/logo2.png", alt="sponsors image",class="spimage") 
+      img(src="../static/img/logo3.png", alt="sponsors image",class="spimage") 
+      img(src="../static/img/logo4.png", alt="sponsors image",class="spimage")
